@@ -3,3 +3,4 @@ WTForms~=3.2.1
 gunicorn~=23.0.0
 Flask-WTF~=1.2.2
 Bootstrap-Flask~=2.4.1
+email_validator==2.2.0
