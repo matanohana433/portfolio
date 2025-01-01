@@ -9,13 +9,13 @@ import smtplib
 
 
 
-OWN_EMAIL = "matantestcode@gmail.com"
-OWN_PASSWORD = "cggd tymf ltfh gkfg"
+OWN_EMAIL = os.environ.get('OWN_EMAIL')
+OWN_PASSWORD = os.environ.get('OWN_PASSWORD')
 
 
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
-app.config['SECRET_KEY'] = os.urandom(24)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 app.jinja_env.globals['current_year'] = datetime.now().year
 
@@ -54,4 +54,4 @@ def contact():
     return render_template("contact.html", contact_form=form, page_title=title)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
