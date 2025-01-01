@@ -1,0 +1,92 @@
+
+*{
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: #F4F6FF;
+}
+
+.subtitles {
+    color: #EB8317 !important;
+}
+
+.nav-link{
+    color: black;
+}
+
+.card-body{
+    background-color: #F4F6FF;
+    justify-items:center;
+}
+
+.card-body .icons{
+    width: 40px;
+    height: 40px;
+    background-color: #F3C623;
+    border-radius: 50%;
+}
+
+.icons i{
+    font-size: 1.5em;
+}
+
+.list-group-item{
+    border: none;
+    background-color: #F4F6FF;
+}
+
+.certificate{
+    padding-top: 45%;
+}
+
+.my-projects .col{
+    justify-items: center;
+}
+
+#col-1{
+    justify-items: flex-start;
+}
+
+#col-3{
+    justify-items: flex-end;
+}
+
+.skill-set{
+    max-width: 700;
+    max-height: 500;
+}
+
+.skill-set img{
+    width: 48;
+}
+
+
+.scale-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-on-hover:hover {
+    transform: scale(1.2);
+}
+
+footer a svg{
+    transition: background-color 0.3s ease;
+}
+
+footer a svg:hover {
+    color: #EB8317;
+}
+
+.progress-bar{
+    background-color: #F3C623;
+}
+.form-container{
+    justify-items: center;
+}
+
+.form {
+    width: 50%;
+}

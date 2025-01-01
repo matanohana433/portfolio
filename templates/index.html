@@ -1,0 +1,171 @@
+
+{% extends "base.html" %}
+{% block content %}
+    <!--Centered Hero-->
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <!-- Background color -->
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+      <clipPath id="circle-clip">
+        <circle cx="70" cy="70" r="70" />
+      </clipPath>
+      <image href="static/images/my-avatar.png" x="0" y="0" width="140" height="140" clip-path="url(#circle-clip)" preserveAspectRatio="xMidYMid slice"/>
+    </svg>
+        <h1 class="display-5 fw-bold text-body-emphasis subtitles mt-4">Python Developer</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">A diligent programmer with a robust work ethic and a deep sense of responsibility, demonstrate commitment to organizational objectives, and am passionate about growing and expanding my skill set. I am adept at continuous learning and skill enhancement.</p>
+        </div>
+      </div>
+    </div>
+    <!--Card-Group-->
+    <div class="container">
+        <div class="card-group">
+          <div class="card text-center">
+
+            <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center mb-2 p-4 icons">
+                  <i class="bi bi-code-square"></i>
+                </div>
+              <h5 class="card-title">Hands-On Experience</h5>
+              <p class="card-text">Projects:</p>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-check"></i>Python Core</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Movie Management App</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Movie Management Testing</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Billboard Hot 100</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Rain Alert</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Stock-News Alert</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Cafe API</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>My Top Ten Movies</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Amazon Price Tracker</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Data Entry Automation</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Blog App</li>
+                </ul>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center mb-2 p-4 icons">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+              <h5 class="card-title">Graduated Information Science & Web Technologies</h5>
+              <p class="card-text">Main Courses:</p>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-check"></i> Algorithms I</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Programming Basics</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Advanced Programming</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Data Science introduction</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Big Data applications</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Web Programming - Client-Side</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Web Programming - Server-Side</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> ASP.NET</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Introduction to Developing Mobile Apps Using Android and Java</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Final Project</li>
+                </ul>
+
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center mb-2 p-4 icons">
+                  <i class="bi bi-patch-check"></i>
+                </div>
+                <h5 class="card-title">Official Courses Certificates</h5>
+                <ul class="list-group certificate">
+                    <li class="list-group-item"><i class="bi bi-check"></i> Devops Experts: Python Course</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i> Udemy: 100 Days of Code: The Complete Python Pro Bootcamp</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Custom Cards-->
+
+        <div class="container text-center">
+            <h2 class="pt-5 pb-5 display-4 fw-bold text-body-emphasis subtitles" >My Recent Work:</h2>
+            <div class="row my-projects">
+                <div class="col" id="col-1">
+                    <div class="card" style="width: 18rem;">
+                      <img src="static/images/movie-project.png" class="card-img-top" alt="movie-project picture">
+                      <div class="card-body">
+                        <h5 class="card-title">Movie Management Project</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/matanohana433/movie-management-app" class="btn btn-dark">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                        </svg> Project</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="static/images/blog-project.png" class="card-img-top" alt="blog-project picture">
+                      <div class="card-body">
+                        <h5 class="card-title">Blog Project</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/matanohana433/flask-blog-application" class="btn btn-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                </svg> Project
+              </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col" id="col-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="static/images/data-entry-project.png" class="card-img-top" alt="data-entry-project picture">
+                      <div class="card-body">
+                        <h5 class="card-title">Data Entry Job Automation Project</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/matanohana433/zillow-data-automation" class="btn btn-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                        </svg> Project
+                      </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!--Skill set Hero:-->
+    <div class="px-4 pt-5 my-5 text-center">
+    <h2 class="display-4 fw-bold text-body-emphasis subtitles">Languages & Skills</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Some of the languages and the skills I've acquired</p>
+
+    </div>
+      <div class="container px-5">
+        <div class="container text-center skill-set">
+          <div class="row row-cols-4 m-3">
+            <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg" alt="python-icon"></div>
+            <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/CS.svg" alt="cs-icon"></div>
+            <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg" alt="js-icon"></div>
+            <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Kotlin-Dark.svg" alt="kotlin-icon"></div>
+          </div>
+          <div class="row row-cols-4 m-3">
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg" alt="html-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg" alt="css-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg" alt="react-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bootstrap.svg" alt="bs-icon"></div>
+          </div>
+          <div class="row row-cols-4 m-3">
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MongoDB.svg" alt="mongo-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg" alt="mysql-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg" alt="postgre-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/SQLite.svg" alt="sqlite-icon"></div>
+          </div>
+          <div class="row row-cols-4 m-3">
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Selenium.svg" alt="selenium.icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Postman.svg" alt="postman-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Dark.svg" alt="nodejs-icon"></div>
+              <div class="col"><img class="scale-on-hover" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg" alt="git-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+
