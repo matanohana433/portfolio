@@ -6,6 +6,8 @@ from wtforms.validators import DataRequired, Email, Length
 from flask_bootstrap import Bootstrap5
 import os
 import smtplib
+import logging
+
 
 
 
@@ -18,6 +20,8 @@ bootstrap = Bootstrap5(app)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 app.jinja_env.globals['current_year'] = datetime.now().year
+app.logger.setLevel(logging.ERROR)
+
 
 class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired(), Length(min=2)])
@@ -27,11 +31,15 @@ class ContactForm(FlaskForm):
 
 
 def send_email(name, email, message):
-    email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nMessage:{message}"
-    with smtplib.SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
-        connection.login(OWN_EMAIL, OWN_PASSWORD)
-        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
+    try:
+        email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nMessage:{message}"
+        with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+            connection.starttls()
+            connection.login(OWN_EMAIL, OWN_PASSWORD)
+            connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
+    except Exception as e:
+        app.logger.error(f"Failed to send email: {e}")
+        flash("An error occurred while sending your message. Please try again later.", "danger")
 
 
 
